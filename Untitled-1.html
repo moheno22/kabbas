@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Application</title>
+</head>
+<body>
+
+Q1. What is the largest country in the world?<br>
+<input type="radio" name="question1" id="correct1">Russia<br>
+<input type="radio" name="question1">Sudan<br>
+<input type="radio" name="question1">India<br>
+<input type="radio" name="question1">Italia <br><br>
+
+Q2. What is the longest river in the world ?<br>
+<input type="radio" name="question2" >The Nile River <br>
+<input type="radio" name="question2">Amazon River <br>
+<input type="radio" name="question2" id="correct2">Ganges River <br>
+<input type="radio" name="question2">Indus River <br><br>
+
+Q3. What is the largest continent in the world?<br>
+<input type="radio" name="question3" >Asia<br>
+<input type="radio" name="question3"id="correct3">Africa <br>
+<input type="radio" name="question3">Europe <br>
+<input type="radio" name="question3">South america <br><br>
+
+Q4. What is the strongest economy in the world?<br>
+<input type="radio" name="question3" >Usa <br>
+<input type="radio" name="question3"id="correct3">South Africa<br>
+<input type="radio" name="question3">China<br>
+<input type="radio" name="question3">Canada<br><br>
+
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+ alert("Your score is:"+score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+</body>
+</html>
